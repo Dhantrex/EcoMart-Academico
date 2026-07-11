@@ -78,5 +78,13 @@
         "descuento":"-16%",
         "stock":250,
         "imagen":"https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=500"
+    },
+    {
+        "id":9,
+        "nombre":"Chocolate Sublime",
+        "categoria":"Dulces",
+        "precio":4.00,
+        "stock":15,
+        "imagen":"https://images.unsplash.com/photo-1632204416436-d0561c9c9380?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
 ]
