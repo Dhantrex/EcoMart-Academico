@@ -1,0 +1,61 @@
+/*=========================================================
+                    TOAST
+=========================================================*/
+
+.toast{
+
+    position:fixed;
+
+    top:30px;
+
+    right:30px;
+
+    min-width:300px;
+
+    padding:18px 22px;
+
+    border-radius:12px;
+
+    background:#22C55E;
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.18);
+
+    transform:translateX(420px);
+
+    opacity:0;
+
+    transition:.35s;
+
+    z-index:9999;
+
+}
+
+.toast.show{
+
+    transform:translateX(0);
+
+    opacity:1;
+
+}
+
+.toast i{
+
+    font-size:22px;
+
+}
+
+.toast span{
+
+    font-weight:600;
+
+    font-size:15px;
+
+}

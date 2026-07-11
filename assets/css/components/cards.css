@@ -1,0 +1,300 @@
+/*==================================================
+                PRODUCT CARD
+==================================================*/
+
+.product-card{
+
+    background:#FFFFFF;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    transition:
+        transform .35s,
+        box-shadow .35s;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+}
+
+/*==================================================
+                HOVER TARJETA
+==================================================*/
+
+.product-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.16);
+
+}
+
+/*==================================================
+                DESCUENTO
+==================================================*/
+
+.product-discount{
+
+    position:absolute;
+
+    top:15px;
+
+    left:15px;
+
+    background:#E53935;
+
+    color:white;
+
+    padding:6px 12px;
+
+    border-radius:25px;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    z-index:5;
+
+}
+
+/*==================================================
+                FAVORITOS
+==================================================*/
+
+.product-favorite{
+
+    position:absolute;
+
+    top:15px;
+
+    right:15px;
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:white;
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:0 6px 15px rgba(0,0,0,.12);
+
+    transition:.30s;
+
+    z-index:5;
+
+}
+
+.product-favorite:hover{
+
+    color:#E53935;
+
+    transform:scale(1.1);
+
+}
+
+/*==================================================
+                IMAGEN
+==================================================*/
+
+.product-image{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:contain;
+
+    padding:18px;
+
+    transition:transform .35s;
+
+}
+
+.product-card:hover .product-image{
+
+    transform:scale(1.08);
+
+}
+
+/*==================================================
+                INFORMACIÓN
+==================================================*/
+
+.product-info{
+
+    padding:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+    flex:1;
+
+}
+
+.product-category{
+
+    font-size:13px;
+
+    color:#6B7280;
+
+    text-transform:uppercase;
+
+    letter-spacing:.5px;
+
+    font-weight:600;
+
+}
+
+.product-name{
+
+    font-size:19px;
+
+    font-weight:600;
+
+    color:#1F2937;
+
+    min-height:50px;
+
+    line-height:1.4;
+
+}
+
+/*==================================================
+                PRECIOS
+==================================================*/
+
+.product-price{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-end;
+
+    margin:12px 0;
+
+}
+
+.product-price small{
+
+    color:#9CA3AF;
+
+    font-size:12px;
+
+    display:block;
+
+    margin-bottom:4px;
+
+}
+
+.current-price{
+
+    color:#2E7D32;
+
+    font-size:25px;
+
+    font-weight:700;
+
+}
+
+.old-price{
+
+    color:#9CA3AF;
+
+    text-decoration:line-through;
+
+    font-size:15px;
+
+}
+
+/*==================================================
+                STOCK
+==================================================*/
+
+.product-stock{
+
+    color:#6B7280;
+
+    font-size:14px;
+
+}
+
+/*==================================================
+                BOTÓN
+==================================================*/
+
+.add-cart{
+
+    margin-top:auto;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    background:#2E7D32;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:
+        background .25s,
+        transform .20s,
+        box-shadow .25s;
+
+}
+
+.add-cart:hover{
+
+    background:#1B5E20;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 20px rgba(46,125,50,.35);
+
+}
+
+.add-cart:active{
+
+    transform:scale(.97);
+
+}
+
+/*==================================================
+                EFECTO GENERAL
+==================================================*/
+
+.product-card:hover .product-name{
+
+    color:#2E7D32;
+
+}

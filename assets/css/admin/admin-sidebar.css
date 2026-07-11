@@ -1,0 +1,159 @@
+/*=========================================================
+                ADMIN SIDEBAR
+=========================================================*/
+
+.admin-sidebar{
+
+    width:270px;
+
+    min-height:100vh;
+
+    background:#1E3A34;
+
+    color:#FFFFFF;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    position:sticky;
+
+    top:0;
+
+    left:0;
+
+    box-shadow:4px 0 20px rgba(0,0,0,.08);
+
+}
+
+.admin-sidebar__logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:30px 25px;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.admin-sidebar__logo img{
+
+    width:60px;
+
+    height:60px;
+
+    object-fit:contain;
+
+}
+
+.admin-sidebar__logo h2{
+
+    font-size:24px;
+
+    color:white;
+
+}
+
+.admin-sidebar__logo span{
+
+    font-size:13px;
+
+    color:#A7F3D0;
+
+}
+
+.admin-menu{
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:20px 0;
+
+    flex:1;
+
+}
+
+.admin-menu__item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:16px 25px;
+
+    color:#E5E7EB;
+
+    transition:.30s;
+
+    font-size:15px;
+
+    font-weight:500;
+
+}
+
+.admin-menu__item i{
+
+    width:22px;
+
+    text-align:center;
+
+    font-size:18px;
+
+}
+
+.admin-menu__item:hover{
+
+    background:rgba(255,255,255,.08);
+
+    color:white;
+
+    padding-left:35px;
+
+}
+
+.admin-menu__item.active{
+
+    background:#2E7D32;
+
+    color:white;
+
+    border-left:5px solid #A7F3D0;
+
+}
+
+.admin-logout{
+
+    margin:25px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#C62828;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.admin-logout:hover{
+
+    background:#B71C1C;
+
+}

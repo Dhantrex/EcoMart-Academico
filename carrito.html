@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Carrito | EcoMart</title>
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS Base -->
+
+    <link rel="stylesheet" href="assets/css/base/variables.css">
+    <link rel="stylesheet" href="assets/css/base/reset.css">
+    <link rel="stylesheet" href="assets/css/base/global.css">
+
+    <!-- Layout -->
+
+    <link rel="stylesheet" href="assets/css/layout/navbar.css">
+    <link rel="stylesheet" href="assets/css/layout/footer.css">
+
+    <!-- Componentes -->
+
+    <link rel="stylesheet" href="assets/css/components/buttons.css">
+    <link rel="stylesheet" href="assets/css/components/cards.css">
+    <link rel="stylesheet" href="assets/css/components/toast.css">
+    <link rel="stylesheet" href="assets/css/components/loader.css">
+
+    <!-- Página -->
+
+    <link rel="stylesheet" href="assets/css/pages/carrito.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <div id="loaderContainer"></div>
+
+    <div id="navbar"></div>
+
+    <main class="cart-page">
+
+        <section class="cart-products">
+
+            <div class="cart-header">
+
+                <h1>
+
+                    Mi carrito
+
+                </h1>
+
+                <div class="cart-actions">
+
+                    <a
+                        href="index.html"
+                        class="continue-shopping">
+
+                        <i class="fa-solid fa-arrow-left"></i>
+
+                        Seguir comprando
+
+                    </a>
+
+                    <button
+                        id="emptyCartButton"
+                        class="empty-cart">
+
+                        <i class="fa-solid fa-trash"></i>
+
+                        Vaciar carrito
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div id="cartItems">
+
+                <!-- Productos -->
+
+            </div>
+
+        </section>
+
+        <aside class="cart-summary">
+
+            <h2>
+
+                Resumen del pedido
+
+            </h2>
+
+            <div class="summary-row">
+
+                <span>Subtotal</span>
+
+                <span id="subtotal">
+
+                    S/. 0.00
+
+                </span>
+
+            </div>
+
+            <div class="summary-row">
+
+                <span>Envío</span>
+
+                <span>
+
+                    Gratis
+
+                </span>
+
+            </div>
+
+            <hr>
+
+            <div class="summary-row total">
+
+                <span>Total</span>
+
+                <span id="total">
+
+                    S/. 0.00
+
+                </span>
+
+            </div>
+
+            <button
+                id="checkoutButton"
+                class="checkout-button">
+
+                Proceder al pago
+
+            </button>
+
+        </aside>
+
+    </main>
+
+    <!-- Scripts -->
+
+    <script src="assets/js/core/loader.js"></script>
+
+    <script src="assets/js/components/navbar.js"></script>
+
+    <script src="assets/js/pages/carrito.js"></script>
+
+    <script src="assets/js/components/toast.js"></script>
+
+</body>

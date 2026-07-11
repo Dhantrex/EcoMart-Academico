@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Panel Administrativo | EcoMart</title>
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Base -->
+
+    <link rel="stylesheet" href="../assets/css/base/variables.css">
+    <link rel="stylesheet" href="../assets/css/base/reset.css">
+    <link rel="stylesheet" href="../assets/css/base/global.css">
+
+    <!-- Admin -->
+
+    <link rel="stylesheet" href="../assets/css/admin/admin-navbar.css">
+    <link rel="stylesheet" href="../assets/css/admin/admin-sidebar.css">
+
+    <link rel="stylesheet" href="../assets/css/pages/admin.css">
+
+</head>
+
+<body>
+
+    <div id="adminNavbar"></div>
+
+    <main class="admin-container">
+
+        <div id="adminSidebar"></div>
+
+        <section id="adminContent">
+
+            <div class="admin-welcome">
+
+                <h2>
+
+                    Bienvenido al Panel Administrativo
+
+                </h2>
+
+                <p>
+
+                    Administra todos los módulos de EcoMart desde un solo lugar.
+
+                </p>
+
+            </div>
+
+            <section class="dashboard-cards">
+
+                <article class="dashboard-card">
+
+                    <div>
+
+                        <span class="card-title">
+
+                            Productos
+
+                        </span>
+
+                        <h3>
+
+                            128
+
+                        </h3>
+
+                    </div>
+
+                    <i class="fa-solid fa-box"></i>
+
+                </article>
+
+                <article class="dashboard-card">
+
+                    <div>
+
+                        <span class="card-title">
+
+                            Pedidos
+
+                        </span>
+
+                        <h3>
+
+                            54
+
+                        </h3>
+
+                    </div>
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                </article>
+
+                <article class="dashboard-card">
+
+                    <div>
+
+                        <span class="card-title">
+
+                            Usuarios
+
+                        </span>
+
+                        <h3>
+
+                            89
+
+                        </h3>
+
+                    </div>
+
+                    <i class="fa-solid fa-users"></i>
+
+                </article>
+
+                <article class="dashboard-card">
+
+                    <div>
+
+                        <span class="card-title">
+
+                            Ventas
+
+                        </span>
+
+                        <h3>
+
+                            S/. 12,850
+
+                        </h3>
+
+                    </div>
+
+                    <i class="fa-solid fa-sack-dollar"></i>
+
+                </article>
+
+            </section>
+
+            <section class="dashboard-panels">
+
+                <!-- Últimos pedidos -->
+
+                <article class="dashboard-panel">
+
+                    <div class="panel-header">
+
+                        <h3>
+
+                            Últimos pedidos
+
+                        </h3>
+
+                        <button>
+
+                            Ver todos
+
+                        </button>
+
+                    </div>
+
+                    <table class="dashboard-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>ID</th>
+
+                                <th>Cliente</th>
+
+                                <th>Total</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>#1025</td>
+
+                                <td>Carlos Ruiz</td>
+
+                                <td>S/. 89.90</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>#1024</td>
+
+                                <td>Ana López</td>
+
+                                <td>S/. 120.50</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>#1023</td>
+
+                                <td>Luis Torres</td>
+
+                                <td>S/. 45.00</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>#1022</td>
+
+                                <td>María Díaz</td>
+
+                                <td>S/. 210.30</td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </article>
+
+                <!-- Poco stock -->
+
+                <article class="dashboard-panel">
+
+                    <div class="panel-header">
+
+                        <h3>
+
+                            Productos con poco stock
+
+                        </h3>
+
+                    </div>
+
+                    <ul class="stock-list">
+
+                        <li>
+
+                            <span>Leche Gloria</span>
+
+                            <strong>3 unidades</strong>
+
+                        </li>
+
+                        <li>
+
+                            <span>Pan Integral</span>
+
+                            <strong>5 unidades</strong>
+
+                        </li>
+
+                        <li>
+
+                            <span>Yogurt Natural</span>
+
+                            <strong>2 unidades</strong>
+
+                        </li>
+
+                        <li>
+
+                            <span>Arroz Premium</span>
+
+                            <strong>4 unidades</strong>
+
+                        </li>
+
+                        <li>
+
+                            <span>Aceite Vegetal</span>
+
+                            <strong>1 unidad</strong>
+
+                        </li>
+
+                    </ul>
+
+                </article>
+
+            </section>
+
+        </section>
+        
+    </main>
+
+    <script src="../assets/js/core/loader.js"></script>
+
+    <script src="../assets/js/pages/admin.js"></script>
+
+</body>
+
+</html>

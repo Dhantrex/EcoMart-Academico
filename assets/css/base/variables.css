@@ -1,0 +1,142 @@
+/* ==========================================================
+   ECOMART
+   VARIABLES GLOBALES
+========================================================== */
+
+:root{
+
+    /*======================================================
+        COLORES PRINCIPALES
+    ======================================================*/
+
+    --primary-color: #2E7D32;
+    --primary-light: #43A047;
+    --primary-dark: #1B5E20;
+
+    --secondary-color: #FFC107;
+
+    --accent-color: #00C853;
+
+    --danger-color: #E53935;
+
+    --warning-color: #FF9800;
+
+    --info-color: #29B6F6;
+
+
+    /*======================================================
+        FONDOS
+    ======================================================*/
+
+    --background-color:#F5F7FA;
+
+    --background-white:#FFFFFF;
+
+    --background-light:#FAFAFA;
+
+    --background-sidebar:#FFFFFF;
+
+    --background-navbar:#FFFFFF;
+
+    --background-footer:#1E293B;
+
+
+    /*======================================================
+        TEXTOS
+    ======================================================*/
+
+    --text-primary:#263238;
+
+    --text-secondary:#607D8B;
+
+    --text-light:#90A4AE;
+
+    --text-white:#FFFFFF;
+
+
+    /*======================================================
+        BORDES
+    ======================================================*/
+
+    --border-color:#E2E8F0;
+
+    --border-radius-xs:5px;
+
+    --border-radius-sm:10px;
+
+    --border-radius-md:15px;
+
+    --border-radius-lg:20px;
+
+    --border-radius-xl:30px;
+
+
+    /*======================================================
+        SOMBRAS
+    ======================================================*/
+
+    --shadow-xs:0px 2px 5px rgba(0,0,0,.05);
+
+    --shadow-sm:0px 4px 10px rgba(0,0,0,.08);
+
+    --shadow-md:0px 10px 25px rgba(0,0,0,.10);
+
+    --shadow-lg:0px 20px 35px rgba(0,0,0,.15);
+
+
+    /*======================================================
+        TRANSICIONES
+    ======================================================*/
+
+    --transition-fast:.2s ease;
+
+    --transition-normal:.3s ease;
+
+    --transition-slow:.5s ease;
+
+
+    /*======================================================
+        TAMAÑOS
+    ======================================================*/
+
+    --navbar-height:80px;
+
+    --sidebar-width:270px;
+
+    --container-width:1400px;
+
+
+    /*======================================================
+        ESPACIADOS
+    ======================================================*/
+
+    --space-xs:5px;
+
+    --space-sm:10px;
+
+    --space-md:20px;
+
+    --space-lg:30px;
+
+    --space-xl:50px;
+
+
+    /*======================================================
+        TIPOGRAFÍA
+    ======================================================*/
+
+    --font-family:'Poppins',sans-serif;
+
+    --font-xs:12px;
+
+    --font-sm:14px;
+
+    --font-md:16px;
+
+    --font-lg:18px;
+
+    --font-xl:24px;
+
+    --font-title:34px;
+
+}

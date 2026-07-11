@@ -1,0 +1,65 @@
+/*==================================================
+                SIDEBAR
+==================================================*/
+
+.sidebar{
+
+    background:#ffffff;
+
+    border-radius:14px;
+
+    padding:20px;
+
+    border:1px solid #ECECEC;
+
+}
+
+.sidebar__title{
+
+    font-size:22px;
+
+    margin-bottom:20px;
+
+    color:#2E7D32;
+
+}
+
+.sidebar__menu{
+
+    list-style:none;
+
+}
+
+.sidebar__item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:14px;
+
+    margin-bottom:8px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.sidebar__item:hover{
+
+    background:#F3F4F6;
+
+}
+
+.sidebar__item.active{
+
+    background:#2E7D32;
+
+    color:white;
+
+}

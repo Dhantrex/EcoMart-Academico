@@ -1,0 +1,526 @@
+/* ==========================================================
+   RESPONSIVE.CSS
+========================================================== */
+
+/* ==========================
+   PANTALLAS GRANDES
+========================== */
+
+@media screen and (max-width:1400px){
+
+    .content{
+
+        padding:30px;
+
+    }
+
+    .hero{
+
+        height:390px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:44px;
+
+    }
+
+}
+
+
+/* ==========================
+   LAPTOP
+========================== */
+
+@media screen and (max-width:1200px){
+
+    :root{
+
+        --sidebar-width:240px;
+
+    }
+
+    .search-box{
+
+        width:40%;
+
+    }
+
+    .hero{
+
+        height:360px;
+
+        padding:45px;
+
+    }
+
+    .hero-content{
+
+        width:55%;
+
+    }
+
+    .hero-content h1{
+
+        font-size:38px;
+
+    }
+
+    .hero-image{
+
+        width:40%;
+
+    }
+
+    .features{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .products-grid{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+}
+
+
+/* ==========================
+   TABLET
+========================== */
+
+@media screen and (max-width:992px){
+
+    .menu-toggle{
+
+        display:flex;
+
+    }
+
+    .sidebar{
+
+        left:-100%;
+
+        width:280px;
+
+    }
+
+    .sidebar.active{
+
+        left:0;
+
+    }
+
+    .content{
+
+        margin-left:0;
+
+        width:100%;
+
+    }
+
+    .search-box{
+
+        width:55%;
+
+        min-width:250px;
+
+    }
+
+    .hero{
+
+        flex-direction:column;
+
+        justify-content:center;
+
+        text-align:center;
+
+        height:auto;
+
+        padding:50px 30px;
+
+    }
+
+    .hero-content{
+
+        width:100%;
+
+    }
+
+    .hero-image{
+
+        width:80%;
+
+        margin-top:30px;
+
+    }
+
+    .products-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .footer-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+
+/* ==========================
+   MÓVILES GRANDES
+========================== */
+
+@media screen and (max-width:768px){
+
+    .navbar{
+
+        padding:0 15px;
+
+    }
+
+    .logo h1{
+
+        font-size:24px;
+
+    }
+
+    .search-box{
+
+        display:none;
+
+    }
+
+    .nav-icons{
+
+        gap:10px;
+
+    }
+
+    .icon{
+
+        width:42px;
+
+        height:42px;
+
+    }
+
+    .hero{
+
+        border-radius:18px;
+
+        padding:35px 20px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:30px;
+
+    }
+
+    .hero-content p{
+
+        font-size:15px;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .hero-buttons .btn{
+
+        width:220px;
+
+    }
+
+    .hero-image{
+
+        width:100%;
+
+    }
+
+    .features{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .products-grid{
+
+        grid-template-columns:1fr 1fr;
+
+        gap:18px;
+
+    }
+
+    .product-image{
+
+        height:190px;
+
+    }
+
+    .product-name{
+
+        font-size:16px;
+
+    }
+
+    .footer-grid{
+
+        grid-template-columns:1fr;
+
+        gap:35px;
+
+    }
+
+    .footer-bottom{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+}
+
+
+/* ==========================
+   CELULARES
+========================== */
+
+@media screen and (max-width:576px){
+
+    .content{
+
+        padding:15px;
+
+    }
+
+    .hero{
+
+        margin-bottom:25px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:26px;
+
+    }
+
+    .hero-content p{
+
+        font-size:14px;
+
+    }
+
+    .hero-image{
+
+        display:none;
+
+    }
+
+    .section-title{
+
+        font-size:24px;
+
+    }
+
+    .section-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:10px;
+
+    }
+
+    .products-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .product-card{
+
+        border-radius:16px;
+
+    }
+
+    .product-image{
+
+        height:220px;
+
+    }
+
+    .product-info{
+
+        padding:18px;
+
+    }
+
+    .current-price{
+
+        font-size:22px;
+
+    }
+
+    .footer{
+
+        padding-top:45px;
+
+    }
+
+    .footer-logo h2{
+
+        font-size:26px;
+
+    }
+
+    .newsletter form{
+
+        flex-direction:column;
+
+        gap:10px;
+
+    }
+
+    .newsletter input{
+
+        border-radius:10px;
+
+    }
+
+    .newsletter button{
+
+        width:100%;
+
+        border-radius:10px;
+
+        height:45px;
+
+    }
+
+    .back-to-top{
+
+        width:48px;
+
+        height:48px;
+
+        right:15px;
+
+        bottom:15px;
+
+    }
+
+}
+
+
+/* ==========================
+   CELULARES PEQUEÑOS
+========================== */
+
+@media screen and (max-width:360px){
+
+    .logo h1{
+
+        display:none;
+
+    }
+
+    .hero-content h1{
+
+        font-size:22px;
+
+    }
+
+    .btn{
+
+        font-size:14px;
+
+    }
+
+    .product-name{
+
+        font-size:15px;
+
+    }
+
+    .current-price{
+
+        font-size:20px;
+
+    }
+
+}
+
+
+/* ==========================
+   OVERLAY SIDEBAR
+========================== */
+
+.sidebar-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:850;
+
+}
+
+.sidebar-overlay.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+
+/* ==========================
+   ANIMACIONES RESPONSIVE
+========================== */
+
+.fade-in{
+
+    animation:fadeIn .4s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}

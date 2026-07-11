@@ -1,0 +1,12 @@
+# Visual Studio Code
+.vscode/
+
+# Node
+node_modules/
+
+# Logs
+*.log
+
+# Sistema
+.DS_Store
+Thumbs.db

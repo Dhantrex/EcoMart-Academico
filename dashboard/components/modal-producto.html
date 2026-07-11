@@ -1,0 +1,162 @@
+<div
+    class="modal-overlay"
+    id="modalProducto">
+
+    <div class="modal">
+
+        <div class="modal-header">
+
+            <h2>
+
+                Nuevo Producto
+
+            </h2>
+
+            <button
+                id="cerrarModal">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+        <form id="formProducto">
+
+            <div class="form-group">
+
+                <label>
+
+                    Nombre
+
+                </label>
+
+                <input
+                    type="text"
+                    id="nombreProducto"
+                    required>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>
+
+                    Categoría
+
+                </label>
+
+                <input
+                    type="text"
+                    id="categoriaProducto"
+                    required>
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label>
+
+                        Precio
+
+                    </label>
+
+                    <input
+                        type="number"
+                        id="precioProducto"
+                        step="0.01"
+                        required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+
+                        Stock
+
+                    </label>
+
+                    <input
+                        type="number"
+                        id="stockProducto"
+                        required>
+
+                </div>
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label>
+
+                        Precio anterior
+
+                    </label>
+
+                    <input
+                        type="number"
+                        id="precioAnterior"
+                        step="0.01">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+
+                        Descuento
+
+                    </label>
+
+                    <input
+                        type="text"
+                        id="descuentoProducto">
+
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>
+
+                    URL de la imagen
+
+                </label>
+
+                <input
+                    type="text"
+                    id="imagenProducto">
+
+            </div>
+
+            <div class="modal-buttons">
+
+                <button
+                    type="button"
+                    id="cancelarModal">
+
+                    Cancelar
+
+                </button>
+
+                <button
+                    class="btn-primary"
+                    type="submit">
+
+                    Guardar producto
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>

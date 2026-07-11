@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        Gestión de Productos | EcoMart
+
+    </title>
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Base -->
+
+    <link rel="stylesheet" href="../assets/css/base/variables.css">
+    <link rel="stylesheet" href="../assets/css/base/reset.css">
+    <link rel="stylesheet" href="../assets/css/base/global.css">
+
+    <!-- Dashboard -->
+
+    <link rel="stylesheet" href="../assets/css/admin/admin-navbar.css">
+    <link rel="stylesheet" href="../assets/css/admin/admin-sidebar.css">
+
+    <link rel="stylesheet" href="../assets/css/pages/admin.css">
+    <link rel="stylesheet" href="../assets/css/components/modal-producto.css">
+    <link rel="stylesheet" href="../assets/css/pages/productos-admin.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <div id="adminNavbar"></div>
+
+    <main class="admin-container">
+
+        <!-- Sidebar -->
+
+        <div id="adminSidebar"></div>
+
+        <!-- Contenido -->
+
+        <section id="adminContent">
+
+            <!-- Encabezado -->
+
+            <div class="products-header">
+
+                <div>
+
+                    <h2>
+
+                        Gestión de Productos
+
+                    </h2>
+
+                    <p>
+
+                        Administra el catálogo de productos de EcoMart.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Barra de herramientas -->
+
+            <section class="products-toolbar">
+
+                <button
+                    class="btn-primary"
+                    id="nuevoProducto">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Nuevo producto
+
+                </button>
+
+                <div class="toolbar-right">
+
+                    <input
+                        type="text"
+                        id="buscarProducto"
+                        placeholder="Buscar producto...">
+
+                    <select id="filtroCategoria">
+
+                        <option value="todas">
+
+                            Todas las categorías
+
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </section>
+
+            <!-- Tabla -->
+
+            <section class="products-table-container">
+
+                <table class="products-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+
+                                Imagen
+
+                            </th>
+
+                            <th>
+
+                                Producto
+
+                            </th>
+
+                            <th>
+
+                                Categoría
+
+                            </th>
+
+                            <th>
+
+                                Precio
+
+                            </th>
+
+                            <th>
+
+                                Stock
+
+                            </th>
+
+                            <th>
+
+                                Estado
+
+                            </th>
+
+                            <th>
+
+                                Acciones
+
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="tablaProductos">
+
+                        <!-- JavaScript -->
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <div id = "modalContainer"></div>
+
+    <!-- Scripts -->
+
+    <script src="../assets/js/core/loader.js"></script>
+
+    <script src="../assets/js/pages/admin.js"></script>
+
+    <script src="../assets/js/pages/productos-admin.js"></script>
+
+</body>
+
+</html>

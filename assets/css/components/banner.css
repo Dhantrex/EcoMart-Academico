@@ -1,0 +1,455 @@
+/* ==========================================================
+   BANNER.CSS
+========================================================== */
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+
+    position:relative;
+
+    width:100%;
+
+    height:430px;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    margin-bottom:40px;
+
+    background:linear-gradient(135deg,#43A047,#2E7D32);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:60px;
+
+}
+
+/* ==========================
+   INFORMACIÓN
+========================== */
+
+.hero-content{
+
+    width:48%;
+
+    z-index:2;
+
+}
+
+.hero-subtitle{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    background:rgba(255,255,255,.15);
+
+    color:white;
+
+    border-radius:30px;
+
+    margin-bottom:20px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.hero-content h1{
+
+    color:white;
+
+    font-size:52px;
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+
+    font-weight:700;
+
+}
+
+.hero-content p{
+
+    color:white;
+
+    font-size:18px;
+
+    margin-bottom:35px;
+
+    opacity:.95;
+
+}
+
+/* ==========================
+   BOTONES
+========================== */
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.hero-buttons .btn{
+
+    min-width:170px;
+
+}
+
+.hero-buttons .btn-secondary{
+
+    background:white;
+
+    color:var(--primary-color);
+
+}
+
+.hero-buttons .btn-secondary:hover{
+
+    background:#F5F5F5;
+
+}
+
+/* ==========================
+   IMAGEN
+========================== */
+
+.hero-image{
+
+    width:45%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:2;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    max-width:450px;
+
+    object-fit:contain;
+
+}
+
+/* ==========================
+   FORMAS DECORATIVAS
+========================== */
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+
+    height:320px;
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:50%;
+
+    top:-100px;
+
+    right:-60px;
+
+}
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:220px;
+
+    height:220px;
+
+    background:rgba(255,255,255,.05);
+
+    border-radius:50%;
+
+    bottom:-80px;
+
+    left:-50px;
+
+}
+
+/* ==========================
+   SLIDER
+========================== */
+
+.hero-slider{
+
+    position:relative;
+
+    width:100%;
+
+    height:100%;
+
+}
+
+.slide{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:60px;
+
+    opacity:0;
+
+    transition:.6s;
+
+}
+
+.slide.active{
+
+    opacity:1;
+
+    z-index:2;
+
+}
+
+/* ==========================
+   BOTONES DEL SLIDER
+========================== */
+
+.slider-controls{
+
+    position:absolute;
+
+    bottom:25px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    display:flex;
+
+    gap:12px;
+
+    z-index:5;
+
+}
+
+.slider-dot{
+
+    width:14px;
+
+    height:14px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.4);
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.slider-dot.active{
+
+    background:white;
+
+    transform:scale(1.25);
+
+}
+
+/* ==========================
+   FLECHAS
+========================== */
+
+.slider-arrow{
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.20);
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    z-index:5;
+
+}
+
+.slider-arrow:hover{
+
+    background:white;
+
+    color:var(--primary-color);
+
+}
+
+.slider-prev{
+
+    left:20px;
+
+}
+
+.slider-next{
+
+    right:20px;
+
+}
+
+/* ==========================
+   ETIQUETA DE OFERTA
+========================== */
+
+.hero-offer{
+
+    position:absolute;
+
+    top:35px;
+
+    right:35px;
+
+    background:var(--secondary-color);
+
+    color:#222;
+
+    padding:10px 20px;
+
+    border-radius:40px;
+
+    font-weight:700;
+
+    font-size:15px;
+
+    box-shadow:var(--shadow-md);
+
+}
+
+/* ==========================
+   EFECTOS
+========================== */
+
+.hero-image img{
+
+    animation:floatImage 4s ease-in-out infinite;
+
+}
+
+@keyframes floatImage{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================
+   ANIMACIÓN TEXTO
+========================== */
+
+.hero-content h1{
+
+    animation:titleAppear .8s ease;
+
+}
+
+.hero-content p{
+
+    animation:textAppear 1s ease;
+
+}
+
+@keyframes titleAppear{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes textAppear{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}

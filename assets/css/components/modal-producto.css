@@ -1,0 +1,197 @@
+/*=========================================================
+                MODAL PRODUCTO
+=========================================================*/
+
+.modal-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:5000;
+
+}
+
+.modal-overlay.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.modal{
+
+    width:700px;
+
+    max-width:90%;
+
+    background:#FFF;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.25);
+
+    transform:translateY(-20px);
+
+    transition:.3s;
+
+}
+
+.modal-overlay.active .modal{
+
+    transform:translateY(0);
+
+}
+
+.modal-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:22px 30px;
+
+    border-bottom:1px solid #E5E7EB;
+
+}
+
+.modal-header h2{
+
+    font-size:24px;
+
+}
+
+.modal-header button{
+
+    width:40px;
+
+    height:40px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#F3F4F6;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.modal-header button:hover{
+
+    background:#E5E7EB;
+
+}
+
+#formProducto{
+
+    padding:30px;
+
+}
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+    margin-bottom:18px;
+
+}
+
+.form-group label{
+
+    font-weight:600;
+
+    color:#374151;
+
+}
+
+.form-group input{
+
+    height:45px;
+
+    border:1px solid #D1D5DB;
+
+    border-radius:10px;
+
+    padding:0 15px;
+
+    font-size:15px;
+
+}
+
+.form-group input:focus{
+
+    outline:none;
+
+    border-color:#2E7D32;
+
+}
+
+.form-row{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+
+}
+
+.modal-buttons{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:15px;
+
+    margin-top:25px;
+
+}
+
+#cancelarModal{
+
+    width:120px;
+
+    height:45px;
+
+    border:1px solid #D1D5DB;
+
+    background:white;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+}
+
+.modal-buttons .btn-primary{
+
+    width:180px;
+
+}

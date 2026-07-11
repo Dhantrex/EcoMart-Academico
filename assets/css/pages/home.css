@@ -1,0 +1,98 @@
+/*==================================================
+                HOME
+==================================================*/
+
+.main-container{
+
+    max-width:1400px;
+
+    margin:25px auto;
+
+    display:grid;
+
+    grid-template-columns:260px 1fr;
+
+    gap:25px;
+
+    padding:0 20px;
+
+}
+
+#content{
+
+    width:100%;
+
+}
+/*==================================================
+                CATÁLOGO
+==================================================*/
+
+.catalogo{
+
+    margin-top:30px;
+
+}
+
+.catalogo__header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+}
+
+.catalogo__header h2{
+
+    font-size:30px;
+
+    color:#2E7D32;
+
+}
+
+.catalogo__header p{
+
+    margin-top:8px;
+
+    color:#666;
+
+}
+
+.catalogo__button{
+
+    border:none;
+
+    background:#2E7D32;
+
+    color:white;
+
+    padding:14px 28px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.catalogo__button:hover{
+
+    background:#1B5E20;
+
+}
+
+.catalogo__grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}

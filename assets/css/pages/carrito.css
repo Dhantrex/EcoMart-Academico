@@ -1,0 +1,443 @@
+/*=========================================================
+                    CARRITO
+=========================================================*/
+
+.cart-page{
+
+    width:90%;
+
+    max-width:1400px;
+
+    margin:40px auto;
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:35px;
+
+    align-items:start;
+
+}
+
+/*=========================================================
+                    PRODUCTOS
+=========================================================*/
+
+.cart-products h1{
+
+    font-size:32px;
+
+    margin-bottom:25px;
+
+    color:var(--text-dark);
+
+}
+
+#cartItems{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+/*=========================================================
+                    TARJETA
+=========================================================*/
+
+.cart-item{
+
+    display:grid;
+
+    grid-template-columns:80px 1fr auto auto auto;
+
+    gap:25px;
+
+    align-items:center;
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.25s;
+
+}
+
+.cart-item:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/*=========================================================
+                    IMAGEN
+=========================================================*/
+
+.cart-image{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:14px;
+
+    object-fit:cover;
+
+}
+
+/*=========================================================
+                    INFORMACIÓN
+=========================================================*/
+
+.cart-info h3{
+
+    font-size:20px;
+
+    margin-bottom:6px;
+
+}
+
+.cart-info p{
+
+    color:#666;
+
+    font-size:16px;
+
+}
+
+.cart-category{
+
+    display:inline-block;
+
+    margin-bottom:10px;
+
+    padding:4px 10px;
+
+    border-radius:20px;
+
+    background:#EEF7EE;
+
+    color:var(--primary-color);
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.cart-price{
+
+    margin-top:8px;
+
+    color:#777;
+
+    font-size:14px;
+
+}
+
+.cart-info strong{
+
+    display:block;
+
+    margin-top:5px;
+
+    font-size:21px;
+
+    color:var(--primary-color);
+
+}
+
+/*=========================================================
+                    CONTROLES
+=========================================================*/
+
+.cart-controls{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.cart-controls button{
+
+    width:34px;
+
+    height:34px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    background:var(--primary-color);
+
+    color:white;
+
+    font-size:18px;
+
+    transition:.25s;
+
+}
+
+.cart-controls button:hover{
+
+    background:var(--primary-dark);
+
+}
+
+.cart-controls span{
+
+    font-weight:600;
+
+    min-width:25px;
+
+    text-align:center;
+
+}
+
+/*=========================================================
+                    SUBTOTAL
+=========================================================*/
+
+.cart-subtotal{
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:var(--primary-color);
+
+}
+
+/*=========================================================
+                    ELIMINAR
+=========================================================*/
+
+.cart-delete{
+
+    border:none;
+
+    background:none;
+
+    color:#e53935;
+
+    cursor:pointer;
+
+    font-size:22px;
+
+    transition:.25s;
+
+}
+
+.cart-delete:hover{
+
+    transform:scale(1.2);
+
+}
+
+/*=========================================================
+                    RESUMEN
+=========================================================*/
+
+.cart-summary{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    position:sticky;
+
+    top:25px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.cart-summary h2{
+
+    margin-bottom:25px;
+
+}
+
+.summary-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin:18px 0;
+
+}
+
+.total{
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    color:var(--primary-color);
+
+}
+
+.checkout-button{
+
+    width:100%;
+
+    height:52px;
+
+    margin-top:25px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    background:var(--primary-color);
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.checkout-button:hover{
+
+    background:var(--primary-dark);
+
+}
+
+/*=========================================================
+                    CARRITO VACÍO
+=========================================================*/
+
+.cart-empty{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:60px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.cart-empty i{
+
+    font-size:60px;
+
+    color:var(--primary-color);
+
+    margin-bottom:20px;
+
+}
+
+.cart-empty h2{
+
+    margin-bottom:10px;
+
+}
+
+.cart-empty p{
+
+    color:#666;
+
+}
+
+/*=========================================================
+                    CABECERA
+=========================================================*/
+
+.cart-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.cart-actions{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.continue-shopping,
+
+.empty-cart{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:12px 18px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.continue-shopping{
+
+    background:var(--primary-color);
+
+    color:white;
+
+}
+
+.continue-shopping:hover{
+
+    background:var(--primary-dark);
+
+}
+
+.empty-cart{
+
+    border:none;
+
+    background:#E53935;
+
+    color:white;
+
+}
+
+.empty-cart:hover{
+
+    background:#C62828;
+
+}
