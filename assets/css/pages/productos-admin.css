@@ -417,3 +417,19 @@
     background:#C62828;
 
 }
+
+.status-info{
+
+    background:#dbeafe;
+
+    color:#2563eb;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+}
