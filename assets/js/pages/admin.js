@@ -160,6 +160,56 @@ async function cargarEstadisticas(){
 
         }
 
+            /*-----------------------------------------
+                    Últimos pedidos
+            -----------------------------------------*/
+
+            const tablaPedidos = document.querySelector("#tablaUltimosPedidos");
+
+            if(tablaPedidos){
+
+                tablaPedidos.innerHTML = "";
+
+                pedidos
+
+                    .slice()
+
+                    .sort((a,b)=>b.id-a.id)
+
+                    .slice(0,4)
+
+                    .forEach(pedido=>{
+
+                        tablaPedidos.innerHTML += `
+
+                            <tr>
+
+                                <td>
+
+                                    #${pedido.id}
+
+                                </td>
+
+                                <td>
+
+                                    ${pedido.cliente}
+
+                                </td>
+
+                                <td>
+
+                                    S/. ${pedido.total.toFixed(2)}
+
+                                </td>
+
+                            </tr>
+
+                        `;
+
+                    });
+
+            }
+
     }
 
     catch(error){
