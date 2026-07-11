@@ -81,10 +81,182 @@
     },
     {
         "id":9,
-        "nombre":"Chocolate Sublime",
-        "categoria":"Dulces",
-        "precio":4.00,
-        "stock":15,
-        "imagen":"https://images.unsplash.com/photo-1632204416436-d0561c9c9380?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "nombre":"Pollo Fresco",
+        "categoria":"Carnes",
+        "precio":12.50,
+        "precioAnterior":15.00,
+        "descuento":"-17%",
+        "stock":80,
+        "imagen":"https://images.unsplash.com/photo-1642102903996-cdad15f5dcdd?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "id":10,
+        "nombre":"Carne de Res",
+        "categoria":"Carnes",
+        "precio":18.90,
+        "precioAnterior":22.00,
+        "descuento":"-14%",
+        "stock":60,
+        "imagen":"https://images.unsplash.com/photo-1723893905879-0e309c2a8e06?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "id":11,
+        "nombre":"Leche Entera",
+        "categoria":"Lacteos",
+        "precio":6.20,
+        "precioAnterior":7.50,
+        "descuento":"-17%",
+        "stock":140,
+        "imagen":"https://images.unsplash.com/photo-1563636619-e9143da7973b?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "id":12,
+        "nombre":"Yogur Natural",
+        "categoria":"Lacteos",
+        "precio":4.40,
+        "precioAnterior":5.20,
+        "descuento":"-15%",
+        "stock":95,
+        "imagen":"https://images.unsplash.com/photo-1576186726115-4d51596775d1?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "id":13,
+        "nombre":"Agua Mineral",
+        "categoria":"Bebidas",
+        "precio":2.30,
+        "precioAnterior":2.70,
+        "descuento":"-15%",
+        "stock":220,
+        "imagen":"https://images.unsplash.com/photo-1616118132534-381148898bb4?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "id":14,
+        "nombre":"Jugo de Naranja",
+        "categoria":"Bebidas",
+        "precio":5.00,
+        "precioAnterior":5.80,
+        "descuento":"-14%",
+        "stock":130,
+        "imagen":"https://images.unsplash.com/photo-1550235273-ceeef3c5b06f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "id":15,
+        "nombre":"Pan de Molde",
+        "categoria":"Panaderia",
+        "precio":3.80,
+        "precioAnterior":4.50,
+        "descuento":"-16%",
+        "stock":100,
+        "imagen":"https://images.unsplash.com/photo-1598373182133-52452f7691ef?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "id":16,
+        "nombre":"Baguette",
+        "categoria":"Panaderia",
+        "precio":1.80,
+        "precioAnterior":2.10,
+        "descuento":"-14%",
+        "stock":180,
+        "imagen":"https://images.unsplash.com/photo-1568471173242-461f0a730452?q=80&w=1147&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "id":17,
+        "nombre":"Arroz Blanco 1kg",
+        "categoria":"Abarrotes",
+        "precio":5.50,
+        "precioAnterior":6.20,
+        "descuento":"-11%",
+        "stock":150,
+        "imagen":"https://plus.unsplash.com/premium_photo-1723925093264-40b6b957c44d?q=80&w=1024&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "id":18,
+        "nombre":"Aceite de Cocina 1L",
+        "categoria":"Abarrotes",
+        "precio":9.30,
+        "precioAnterior":10.00,
+        "descuento":"-7%",
+        "stock":120,
+        "imagen":"https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?q=80&w=718&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "id":19,
+        "nombre":"Detergente Líquido",
+        "categoria":"Limpieza",
+        "precio":8.90,
+        "precioAnterior":10.20,
+        "descuento":"-13%",
+        "stock":90,
+        "imagen":"https://images.unsplash.com/photo-1649005011845-ef225c89da86?q=80&w=881&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "id":20,
+        "nombre":"Cloro 1L",
+        "categoria":"Limpieza",
+        "precio":3.70,
+        "precioAnterior":4.20,
+        "descuento":"-12%",
+        "stock":160,
+        "imagen":"https://images.unsplash.com/photo-1584813470613-5b1c1cad3d69?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "id":21,
+        "nombre":"Croquetas para Perro",
+        "categoria":"Mascotas",
+        "precio":22.50,
+        "precioAnterior":26.00,
+        "descuento":"-13%",
+        "stock":70,
+        "imagen":"https://images.unsplash.com/photo-1571873735645-1ae72b963024?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "id":22,
+        "nombre":"Arena para Gato 5kg",
+        "categoria":"Mascotas",
+        "precio":18.00,
+        "precioAnterior":20.50,
+        "descuento":"-12%",
+        "stock":55,
+        "imagen":"https://th.bing.com/th/id/R.f3cae11fe00c0d6ca9080859ab47e08a?rik=ysLS7IY2JCMRLA&pid=ImgRaw&r=0"
+    },
+    {
+        "id":23,
+        "nombre":"Toallas de Cocina",
+        "categoria":"Hogar",
+        "precio":4.20,
+        "precioAnterior":4.80,
+        "descuento":"-12%",
+        "stock":140,
+        "imagen":"https://d2o812a6k13pkp.cloudfront.net/fit-in/1080x1080/Productos/40416758_0120240425164312.jpg"
+    },
+    {
+        "id":24,
+        "nombre":"Juego de Platos",
+        "categoria":"Hogar",
+        "precio":29.90,
+        "precioAnterior":34.00,
+        "descuento":"-12%",
+        "stock":45,
+        "imagen":"https://m.media-amazon.com/images/I/61OWQ-FSVJL._AC_SL1500_.jpg"
+    },
+    {
+        "id":25,
+        "nombre":"Audífonos Bluetooth",
+        "categoria":"Tecnologia",
+        "precio":55.00,
+        "precioAnterior":69.00,
+        "descuento":"-20%",
+        "stock":65,
+        "imagen":"https://tse2.mm.bing.net/th/id/OIP.dkzRv2U3LIlpX0ILaQWX5QHaIa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+    },
+    {
+        "id":26,
+        "nombre":"Cargador USB-C",
+        "categoria":"Tecnologia",
+        "precio":12.90,
+        "precioAnterior":15.00,
+        "descuento":"-14%",
+        "stock":130,
+        "imagen":"https://i5.walmartimages.com/asr/7f3b2f4d-badd-4308-89c7-2aaa196eef1b.529415ce3a8509c268bf45da5813c479.webp"
     }
 ]
