@@ -46,7 +46,6 @@ function activarMenu(){
     });
 
 }
-
 /*=========================================================
             ESTADÍSTICAS DASHBOARD
 =========================================================*/
@@ -69,6 +68,10 @@ async function cargarEstadisticas(){
 
         const pedidos = await respuestaPedidos.json();
 
+        /*-----------------------------------------
+                    Tarjetas
+        -----------------------------------------*/
+
         document.querySelector("#totalProductos").textContent =
             productos.length;
 
@@ -76,16 +79,86 @@ async function cargarEstadisticas(){
             pedidos.length;
 
         const categorias = new Set(
+
             productos.map(producto=>producto.categoria)
+
         );
 
         document.querySelector("#totalCategorias").textContent =
             categorias.size;
 
-        const bajoStock = productos.filter(producto=>producto.stock <= 5);
+        const bajoStock = productos.filter(
+
+            producto => producto.stock <= 5
+
+        );
 
         document.querySelector("#productosBajoStock").textContent =
             bajoStock.length;
+
+        /*-----------------------------------------
+            Lista de productos con poco stock
+        -----------------------------------------*/
+
+        const listaStock = document.querySelector("#stockList");
+
+        if(listaStock){
+
+            listaStock.innerHTML = "";
+
+            if(bajoStock.length === 0){
+
+                listaStock.innerHTML = `
+
+                    <li>
+
+                        <span>
+
+                            No hay productos con poco stock.
+
+                        </span>
+
+                    </li>
+
+                `;
+
+            }
+
+            else{
+
+                bajoStock
+
+                    .sort((a,b)=>a.stock-b.stock)
+
+                    .slice(0,5)
+
+                    .forEach(producto=>{
+
+                        listaStock.innerHTML += `
+
+                            <li>
+
+                                <span>
+
+                                    ${producto.nombre}
+
+                                </span>
+
+                                <strong>
+
+                                    ${producto.stock} unidades
+
+                                </strong>
+
+                            </li>
+
+                        `;
+
+                    });
+
+            }
+
+        }
 
     }
 
